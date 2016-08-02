@@ -17,6 +17,8 @@ $smallplus-only: new-breakpoint(min-width $smallplus-val max-width $medium-val 6
 $medium-only:    new-breakpoint(min-width $medium-val max-width $large-val 8);
 $large-only:     new-breakpoint(min-width $large-val max-width $xlarge-val 12);
 
+$not-large: new-breakpoint(max-width ($large-val - .125em) 8);
+
 
 // --------------------------------------------------------------------------
 // Inline Block layout - start of new grid system?

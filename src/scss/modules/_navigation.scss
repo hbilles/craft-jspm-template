@@ -383,14 +383,14 @@ nav {
 	display: none;
 
 	@include media($medium) {
-		@include flx-cell(8 of 12);
+		width: 66.6666%;
 		
 		display: block;
 		text-align: right;
 	}
 
 	@include media($large) {
-		@include flx-cell(7 of 12);
+		width: 58.3333%;
 	}
 
 	&__li {
@@ -435,13 +435,13 @@ nav {
 	display: none;
 
 	@include media($medium) {
-		@include flx-cell(3 of 12);
+		width: 25%;
 
 		display: block;
 	}
 
 	@include media($large) {
-		@include flx-cell(2 of 12);
+		width: 16.6666%;
 	}
 }
 
@@ -485,7 +485,7 @@ form[class*='search'] {
 		}
 
 		& + span:before {
-			@extend %icon-search;
+			//@extend %icon-search;
 
 			transition: all .2s ease-in-out;
 
@@ -527,7 +527,9 @@ form[class*='search'] {
 	}
 
 	&__in {
-		@include flx-grid(space-between, center);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 		margin: 0 1em;
 		padding: 1em 0;
@@ -558,14 +560,14 @@ form[class*='search'] {
 	}
 
 	.logo-nav & {
-		@include flx-cell(12 of 12);
+		width: 100%;
 
 		@include media($medium) {
-			@include flx-cell(4 of 12);
+			width: 33.3333%;
 		}
 
 		@include media($large) {
-			@include flx-cell(5 of 12);
+			width: 41.6666%;
 		}
 	}
 
