@@ -1,0 +1,13 @@
+body {
+	background-color: $clr-lightest-grey;
+}
+
+#site {
+	position: relative;
+	min-height: 100%;
+	background-color: $clr-white;
+}
+
+#site-header {
+	background-color: $clr-black;
+}

@@ -1,0 +1,21 @@
+// --------------------------------------------------------------------------
+// =contact
+
+.contact__content {
+	@include media($large) {
+		width: 40%;
+		float: left;
+
+		p {
+			font-size: em($fs-body-medium);
+		}
+	}
+}
+
+.contact__form {
+	@include media($large) {
+		width: 50%;
+		float: right;
+	}
+}
+
